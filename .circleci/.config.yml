@@ -39,8 +39,8 @@ jobs:
     steps:
       - checkout:
           post:  
-            - cp -r licenses/. $ANDROID_HOME/licenses
-            - ls $ANDROID_HOME/licenses
+            - cp -r licenses/. /usr/local/android-sdk-linux/licenses
+            - ls /usr/local/android-sdk-linux/licenses
 
       # Download and cache dependencies
       - restore_cache:
