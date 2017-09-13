@@ -37,7 +37,9 @@ jobs:
             - /usr/local/android-sdk-linux/extras/android/m2repository
     
     steps:
-      - checkout
+      - checkout:
+          post:  
+            - cp -r licenses/. $ANDROID_HOME/licenses
 
       # Download and cache dependencies
       - restore_cache:
