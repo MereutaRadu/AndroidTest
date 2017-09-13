@@ -28,7 +28,7 @@ jobs:
           destinateion: apk
       - store_test_results:
           path: app/build/test-results
-  test:
+test:
     override:
         - (./gradlew assemble):
             timeout: 360
