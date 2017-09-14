@@ -24,7 +24,7 @@ jobs:
           path: app/build/outputs/apk
           destination: apk
 
-test:
+  test:
     docker:
       - image: circleci/android:api-25-alpha
     steps:
